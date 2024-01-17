@@ -5,7 +5,9 @@ A17688437
 For terminal command `cd`:
 
 When inputted with no arguments:
+
 `[user@sahara ~]$ cd`
+
 `[user@sahara ~]$` 
 
 Working Directory: `home`
@@ -16,7 +18,9 @@ Error?: Not an Error.
 
 
 When inputted with a path to a directory as an argument:
+
 `[user@sahara ~]$ cd lecture1`
+
 `[user@sahara ~/lecture1]$`
 
 Working Directory: Moved from `home` to `home/lecture1`
@@ -27,7 +31,9 @@ Error?: Not an Error.
 
 
 When inputted with a path to a file as an argument:
+
 `[user@sahara ~]$ cd lecture1/Hello.java`
+
 `bash: cd: lecture1/Hello.java: Not a directory`
 
 Working Directory:  `home`
@@ -44,6 +50,7 @@ For terminal command `ls`:
 
 When inputted with no arguments:
 `[user@sahara ~]$ ls` 
+
 `lecture1`
 
 Working Directory: `home`
@@ -55,7 +62,9 @@ Error?: Not an Error.
 
 
 When inputted with a path to a directory as an argument:
+
 `[user@sahara ~]$ ls lecture1`
+
 `Hello.class  Hello.java  messages  README`
 
 Working Directory?: `/home`
@@ -66,7 +75,9 @@ Error?: Not an error.
 
 
 When inputted with a path to a file as an argument:
+
 `[user@sahara ~]$ ls lecture1/Hello.java`
+
 `lecture1/Hello.java`
 
 Working Directory: `home`
@@ -82,9 +93,12 @@ Error?: Not an error.
 For terminal command `cat`:
 
 When inputted with no arguments:
-`[user@sahara ~]$ cat
-Print 
-Print`
+
+`[user@sahara ~]$ cat`
+
+`Print` 
+
+`Print`
 
 Working Directory: `home`
 
@@ -94,8 +108,10 @@ Error?: Not an error.
 
 
 When inputted with a path to a directory as an argument:
-`[user@sahara ~]$ cat lecture1
-cat: lecture1: Is a directory`
+
+`[user@sahara ~]$ cat lecture1`
+
+`cat: lecture1: Is a directory`
 
 Working Directory: `home`
 
@@ -105,17 +121,26 @@ Error?: Yes, there is an error. If the `cat` is used on a directory, then it can
 
 
 When inputted with a path to a file as an argument:
-`[user@sahara ~]$ cat lecture1/Hello.java
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;`
 
-`public class Hello {
-  public static void main(String[] args) throws IOException {
-    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
-    System.out.println(content);
-  }`
+`[user@sahara ~]$ cat lecture1/Hello.java`
+
+`import java.io.IOException;`
+
+`import java.nio.charset.StandardCharsets;`
+
+`import java.nio.file.Files;`
+
+`import java.nio.file.Path;`
+
+`public class Hello {`
+
+  `public static void main(String[] args) throws IOException {`
+  
+    `String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);`
+    
+    `System.out.println(content);`
+    
+ `}`
 
 Working Directory: `home`
 
