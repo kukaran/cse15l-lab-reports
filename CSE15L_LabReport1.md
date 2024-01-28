@@ -6,9 +6,10 @@ For terminal command `cd`:
 
 When inputted with no arguments:
 
-`[user@sahara ~]$ cd`
-
-`[user@sahara ~]$` 
+```
+[user@sahara ~]$ cd
+[user@sahara ~]$
+```
 
 Working Directory (Absolute path): The working directory is the `/home` directory. (Only one directory posseses this name)
 
@@ -20,9 +21,10 @@ Error?: Not an Error.
 
 When inputted with a path to a directory as an argument:
 
-`[user@sahara ~]$ cd lecture1`
-
-`[user@sahara ~/lecture1]$`
+```
+[user@sahara ~]$ cd lecture1
+[user@sahara ~/lecture1]$
+```
 
 Working Directory (Absolute Path): Moved from `/home` to `/home/lecture1` directory as a result of using the `cd` command.
 
@@ -33,9 +35,10 @@ Error?: Not an Error.
 
 When inputted with a path to a file as an argument:
 
-`[user@sahara ~]$ cd lecture1/Hello.java`
-
-`bash: cd: lecture1/Hello.java: Not a directory`
+```
+[user@sahara ~]$ cd lecture1/Hello.java
+bash: cd: lecture1/Hello.java: Not a directory
+```
 
 Working Directory (Absolute Path):  `/home`
 
@@ -50,9 +53,11 @@ Error?: Yes this is an error, you cannot use the `cd` command and have the argum
 For terminal command `ls`:
 
 When inputted with no arguments:
-`[user@sahara ~]$ ls` 
 
-`lecture1`
+```
+[user@sahara ~]$ ls 
+lecture1
+```
 
 Working Directory (Absolute Path): `/home`
 
@@ -64,9 +69,10 @@ Error?: Not an Error.
 
 When inputted with a path to a directory as an argument:
 
-`[user@sahara ~]$ ls lecture1`
-
-`Hello.class  Hello.java  messages  README`
+```
+[user@sahara ~]$ ls lecture1
+Hello.class  Hello.java  messages  README
+```
 
 Working Directory (Absolute Path): `/home`
 
@@ -77,9 +83,10 @@ Error?: Not an error.
 
 When inputted with a path to a file as an argument:
 
-`[user@sahara ~]$ ls lecture1/Hello.java`
-
-`lecture1/Hello.java`
+```
+[user@sahara ~]$ ls lecture1/Hello.java
+lecture1/Hello.java
+```
 
 Working Directory (Absolute Path): `/home`
 
@@ -95,11 +102,11 @@ For terminal command `cat`:
 
 When inputted with no arguments:
 
-`[user@sahara ~]$ cat`
-
-`Print` 
-
-`Print`
+```
+[user@sahara ~]$ cat
+Print
+Print
+```
 
 Working Directory (Absolute Path): `/home`
 
@@ -110,9 +117,10 @@ Error?: Not an error.
 
 When inputted with a path to a directory as an argument:
 
-`[user@sahara ~]$ cat lecture1`
-
-`cat: lecture1: Is a directory`
+```
+[user@sahara ~]$ cat lecture1
+cat: lecture1: Is a directory
+```
 
 Working Directory (Absolute Path): `/home`
 
@@ -123,25 +131,22 @@ Error?: Yes, there is an error. If the `cat` is used on a directory, then it can
 
 When inputted with a path to a file as an argument:
 
-`[user@sahara ~]$ cat lecture1/Hello.java`
+```
+[user@sahara ~]$ cat lecture1/Hello.java
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+public class Hello {
 
-`import java.io.IOException;`
-
-`import java.nio.charset.StandardCharsets;`
-
-`import java.nio.file.Files;`
-
-`import java.nio.file.Path;`
-
-`public class Hello {`
-
-  `public static void main(String[] args) throws IOException {`
+  public static void main(String[] args) throws IOException {
   
-    `String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);`
+    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);
     
-    `System.out.println(content);`
+    System.out.println(content);
     
- `}`
+ }
+ ```
 
 Working Directory (Absolute Path): `/home`
 
