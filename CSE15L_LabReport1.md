@@ -13,8 +13,7 @@ When inputted with no arguments:
 
 Working Directory (Absolute path): The working directory is the `/home` directory. (Only one directory posseses this name)
 
-Explanation: When inputted with no arguments, the `cd` command does nothing, UNLESS you are not in the `/home` directory. If your working directory is not the `/home` directory
-then using the `cd` command will change your working directory to the `/home` directory. 
+Explanation: When inputted with no arguments, the `cd` command does nothing, UNLESS you are not in the `/home` directory. If your working directory is not the `/home` directory then using the `cd` command will change your working directory to the `/home` directory. 
 
 Error?: Not an Error.
 
@@ -110,7 +109,7 @@ Print
 
 Working Directory (Absolute Path): `/home`
 
-Explanation: When the `cat` command is inputted with no argument, the terminal gets rid of the part of the command line indicating the device and directory, `[user@sahara ~]$`, is now gone. Afterwards I'm left with a blank slate and am allowed to type anything I want, with the result being printed again when I hit enter. In this case I typed `Print` and when I clicked enter, `Print` was displayed again on the command line. To exit this process and get back to the original command line, I can hit the keys Command and C simultaneously on my keyboard.
+Explanation: When the `cat` command is inputted with no argument, the terminal gets rid of the part of the command line indicating the device and directory, `[user@sahara ~]$`, is now gone. Afterwards I'm left with a blank slate and am allowed to type anything I want, with the result being printed again when I hit enter. In this case I typed `Print` and when I clicked enter, `Print` was displayed again on the command line. To exit this process and get back to the original command line, I can hit the keys Control and C simultaneously on my keyboard (Macbook).
 
 Error?: Not an error.
 
