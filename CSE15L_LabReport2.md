@@ -79,5 +79,17 @@ To reiterate, `/n` just tells the program to create a new line for the subsequen
 
 Part 2:
 
+Private Key Path:
+![Image](PrivateKeyLab2.png)
 
+Public Key Path:
+![Image](PublicKeyLab2.png)
+
+Terminal Interaction:
+![Image](TerminalInteractionLab2.png)
+
+Part 3:
+
+I didn't know you were able to use the `mkdir` command to make a directory through terminal. I also didn't know you could use the `scp` command to securely copy files
+between systems.
 
