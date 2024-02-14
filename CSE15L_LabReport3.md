@@ -21,3 +21,30 @@ An input that doesn't induce a failure:
   }
 ```
 The symptom, as the output of running the tests:
+![Image](SymptomFromRunningTests.png)
+
+The bug, as the before-and-after code change required to fix it:
+
+Before:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+After:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+Briefly describe why the fix addresses the issue:
+The left and right hand side of the `=` was switched in the line: `arr[i] = newArray[arr.length - i - 1];`. You want to reference the items in `newArray` from smallest to largest index to the items in `arr`
