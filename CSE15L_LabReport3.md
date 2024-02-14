@@ -84,7 +84,8 @@ What it's doing:
 The `grep` command in this instance has the `--color` modifier in the front of the argument that states the line of text we are searching for and the files' path. What this does is change the color of text we are looking for, so when the output is printed, we can much easily see our word(s) in big blocks of text that it may be hidden in.
 I've added additional screenshots for each example to better show this in action, as markdown doesn't copy color when I copy and paste the output onto this file.
 
-I found information regarding this option at this link: https://www.computerhope.com/unix/ugrep.htm
+I found information regarding this option at this link: 
+https://www.computerhope.com/unix/ugrep.htm
 Scroll down a tiny bit to get the exact place where I found the information.
 
 2. Using the `-i` option:
@@ -121,7 +122,8 @@ kumailkaran@Kumails-MacBook-Pro technical % grep -i "george" 911report/chapter-3
 What it's doing:
 The `grep` command has a option of adding `-i` at beginning of the argument, this makes the text argument we are looking for case-insensitive, which means the `grep` command will look for the string of text disregarding the case status(uppercase or lowercase) of each letter in our argument. 
 
-I found information regarding this option at this link: https://www.computerhope.com/unix/ugrep.htm
+I found information regarding this option at this link: 
+https://www.computerhope.com/unix/ugrep.htm
 Scroll down a tiny bit to get the exact place where I found the information.
 
 3. Using the `-n` option:
@@ -155,7 +157,8 @@ technical % grep -n "War" 911report/chapter-13.1.txt
 What it's doing:
 The `grep` command has the option of using `-n` to list out the line numbers to the left of each line where I find the text argument in my path file.
 
-I found information regarding this option at this link: https://www.computerhope.com/unix/ugrep.htm
+I found information regarding this option at this link: 
+https://www.computerhope.com/unix/ugrep.htm
 Scroll down a tiny bit to get the exact place where I found the information.
 
 4. Using the `.*` option:
@@ -175,6 +178,7 @@ kumailkaran@Kumails-MacBook-Pro technical % grep "what was.*invader" 911report/c
 What it's doing: 
 Rather than having the string of text in my argument simply being encased in quotations, I can add a `.*` modifier between two words or strings of words, so it looks for any string of words where the argument before the `.*` is the beginning of the string and the argument after the `.*` is the end of the string. So in Example 1, `grep "World.*Center" 911report/chapter-2.txt`, will look for strings in `911report/chapter-2.txt` where the beginning of the string (string before `.*`) is `World` and the end of the String (string after `.*`) is `Center`, this command input was able to find the string `World Trade Center`.
 
-I found information regarding this option at this link: https://www.computerhope.com/unix/ugrep.htm
+I found information regarding this option at this link: 
+https://www.computerhope.com/unix/ugrep.htm
 Scroll down a tiny bit to get the exact place where I found the information.
 
