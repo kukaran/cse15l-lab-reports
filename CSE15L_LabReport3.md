@@ -49,6 +49,8 @@ static int[] reversed(int[] arr) {
 Briefly describe why the fix addresses the issue:
 The left and right hand side of the `=` was switched in the line: `arr[i] = newArray[arr.length - i - 1];`. You want to reference the items in `newArray` from smallest to largest index to the items in `arr` from largest to smallest index. So simply switch `arr` and `newArray` in the line to `newArray[i] = arr[arr.length - i - 1];` Then return `newArray` instead of `arr` because in this method `newArray` is a new array that you are creating and modifiying based on the contents in `arr` which is the argument.
 
+Part 2 Researching Commands:
+
 4 Ways to Use the `grep` command:
 
 1. Using the `--color` option:
