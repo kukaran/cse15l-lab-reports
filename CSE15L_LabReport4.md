@@ -87,7 +87,7 @@ Adding the commit message using `vim` editor tools,
 
 This adds the commit message on github.
 
-![Image](finishinguplabreport4.png)
+![Image](finishinguplabreport4pt2.png)
 
 ![Image](commitingchangestogithub.png)
 
