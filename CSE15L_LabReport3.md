@@ -64,6 +64,11 @@ kumailkaran@Kumails-MacBook-Pro technical % grep --color "Bush" 911report/chapte
 Screenshot:
 ![Image](GrepColorEx1.png)
 
+What it's doing:
+The `grep` command in this instance has the `--color` modifier in the front of the argument that states the line of text we are searching for and the files' path. What this does is change the color of text we are looking for, so when the output is printed, we can much easily see our word(s) in big blocks of text that it may be hidden in.
+In this example it's highlighing all the places where it sees the word `"Bush"` in the specified file path `911report/chapter1.txt`
+I've added additional screenshots for each example to better show this in action, as markdown doesn't copy color when I copy and paste the output onto this file.
+
 Example 2:
 ```
 kumailkaran@Kumails-MacBook-Pro technical % grep --color "crash" 911report/chapter-13.2.txt
@@ -81,8 +86,7 @@ Screenshot:
 ![Image](GrepColorEx2.png)
 
 What it's doing: 
-The `grep` command in this instance has the `--color` modifier in the front of the argument that states the line of text we are searching for and the files' path. What this does is change the color of text we are looking for, so when the output is printed, we can much easily see our word(s) in big blocks of text that it may be hidden in.
-I've added additional screenshots for each example to better show this in action, as markdown doesn't copy color when I copy and paste the output onto this file.
+Same as explanation of the modifier as the last example, except here it's highlighting all the places where it sees the word `"crash` in the file path `911report/chapter-13.2.txt`.
 
 I found information regarding this option at this link: 
 https://www.computerhope.com/unix/ugrep.htm
@@ -106,6 +110,9 @@ kumailkaran@Kumails-MacBook-Pro technical % grep -i "pEnTaGON" 911report/chapter
                 dead sailors, the Pentagon might have wanted to respond. Instead, they have often
 ```
 
+What it's doing:
+The `grep` command has a option of adding `-i` at beginning of the argument, this makes the text argument we are looking for case-insensitive, which means the `grep` command will look for the string of text disregarding the case status(uppercase or lowercase) of each letter in our argument. In this instance, it's searching for case insensitive iterations of the word `"pEnTaGON"` in the file path `911report/chapter-6.txt`.
+
 Example 2:
 ```
 kumailkaran@Kumails-MacBook-Pro technical % grep -i "george" 911report/chapter-3.txt 
@@ -120,7 +127,7 @@ kumailkaran@Kumails-MacBook-Pro technical % grep -i "george" 911report/chapter-3
 ```
 
 What it's doing:
-The `grep` command has a option of adding `-i` at beginning of the argument, this makes the text argument we are looking for case-insensitive, which means the `grep` command will look for the string of text disregarding the case status(uppercase or lowercase) of each letter in our argument. 
+Same explanation of the modifier as the last example, except here it's looking for case insensitive iterations of the word `"george"` in the file path `911report/chapter-3.txt` 
 
 I found information regarding this option at this link: 
 https://www.computerhope.com/unix/ugrep.htm
@@ -141,6 +148,8 @@ kumailkaran@Kumails-MacBook-Pro technical % grep -n "Iraq" 911report/chapter-12.
 642:                opportunity to the Arab and Muslim world. Neither Israel nor the new Iraq will be
 654:                    Somalia, Bosnia, Kosovo, Afghanistan, and Iraq. If the United States does not
 ```
+What it's doing:
+The `grep` command has the option of using `-n` to list out the line numbers to the left of each line where I find the text argument in my path file. In this example, it displays all the line numbers of where it finds the word `"Iraq"` in the file path `911report/chapter-12.txt`.
 
 Example 2: 
 ```
@@ -155,7 +164,7 @@ technical % grep -n "War" 911report/chapter-13.1.txt
 ```
 
 What it's doing:
-The `grep` command has the option of using `-n` to list out the line numbers to the left of each line where I find the text argument in my path file.
+Same explanation of the modifier as the last example, except here it's displaying all the line numbers of where it finds the word `"War"` in the file path `911report/chapter-12.txt`.
 
 I found information regarding this option at this link: 
 https://www.computerhope.com/unix/ugrep.htm
@@ -169,6 +178,9 @@ kumailkaran@Kumails-MacBook-Pro technical % grep "World.*Center" 911report/chapt
                 cloudy are the 1993 bombing of the World Trade Center, a plot that same year to
 ```
 
+What it's doing: 
+Rather than having the string of text in my argument simply being encased in quotations, I can add a `.*` modifier between two words or strings of words, so it looks for any string of words where the argument before the `.*` is the beginning of the string and the argument after the `.*` is the end of the string. So in Example 1, `grep "World.*Center" 911report/chapter-2.txt`, will look for strings in `911report/chapter-2.txt` where the beginning of the string (string before `.*`) is `World` and the end of the String (string after `.*`) is `Center`, this command input was able to find the string `World Trade Center`. In this example, it's looking for all the strings of words where the it begins with the word `"World"` and ends with the word `"Center"` in the file path `911report/chapter-2.txt`.
+
 Example 2:
 ```
 kumailkaran@Kumails-MacBook-Pro technical % grep "what was.*invader" 911report/chapter-2.txt 
@@ -176,7 +188,7 @@ kumailkaran@Kumails-MacBook-Pro technical % grep "what was.*invader" 911report/c
 ```
 
 What it's doing: 
-Rather than having the string of text in my argument simply being encased in quotations, I can add a `.*` modifier between two words or strings of words, so it looks for any string of words where the argument before the `.*` is the beginning of the string and the argument after the `.*` is the end of the string. So in Example 1, `grep "World.*Center" 911report/chapter-2.txt`, will look for strings in `911report/chapter-2.txt` where the beginning of the string (string before `.*`) is `World` and the end of the String (string after `.*`) is `Center`, this command input was able to find the string `World Trade Center`.
+Same explanation of the modifier as the last example, except here it's searching for all strings where it begins with the word `"what was"` and ends with the word `"invader"` in the file path `911report/chapter-2.txt`.
 
 I found information regarding this option at this link: 
 https://www.computerhope.com/unix/ugrep.htm
