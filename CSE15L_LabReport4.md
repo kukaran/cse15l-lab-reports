@@ -46,8 +46,9 @@ Committing Changes to github:
 
 `git commit <command v> /home/linux/ieng6/oce/43/743/kukaran/lab7 <enter>`
 
-`<i> Finishing Up Lab Report 4 <ESC><:wq>`
+`<i> Finishing Up Lab Report 4 <ESC><:wq><enter>`
 ![Image](commitingchangestogithub.png)
+![Image](finishinguplabreport4.png)
 
 
 
