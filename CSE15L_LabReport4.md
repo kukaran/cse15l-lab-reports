@@ -28,6 +28,8 @@ Entered `vim` and edited the code to fix the failing test:
 `vim ListExamples.java <enter>`
 ![Image](vimListExamples.png)
 
+Went to the location of the error and fixed it:
+
 `<down><down><down><down><down><down><down><down><down><down><down><down><down><down>
 <down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down>
 <down><down><down><down><down><down><down><down><down><down><down><down><right><right><right>
@@ -37,8 +39,10 @@ Entered `vim` and edited the code to fix the failing test:
 
 Compling and Running the Tests again to see that they pass:
 
+Used the `<up>` shortcut to go through my command history to get a comand I previously used,
 `<up><up><up><up><enter>` (Runs `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`)
 
+Same as just before,
 `<up><up><up><enter>` (Runs `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`)
 ![Image](thetestsnowpass.png)
 
