@@ -45,10 +45,12 @@ Entering the `vim` edit mode on the file I want to edit,
 
 Went to the location of the error and fixed it:
 
-`<down><down><down><down><down><down><down><down><down><down><down><down><down><down>
+```
+<down><down><down><down><down><down><down><down><down><down><down><down><down><down>
 <down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down>
 <down><down><down><down><down><down><down><down><down><down><down><down><right><right><right>
-<right><right><right><right><right><right><right><right><x><i><2><ESC><:wq><enter>` 
+<right><right><right><right><right><right><right><right><x><i><2><ESC><:wq><enter>
+``` 
 
 43 `<down>` keys were pressed and 11 `<right>` keys.
 
